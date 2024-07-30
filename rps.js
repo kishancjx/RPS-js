@@ -4,6 +4,7 @@ let userScore=0;
 let pcScore=0;
 let count=0;
 
+
 function getUserInput() {
   let input = prompt(
     "Enter Your Choice: R for Rock, P for Paper, S for Scissors"
@@ -74,7 +75,7 @@ function identifyWinner() {
 
 function PlayGame()
 {
-  let rounds=parseInt(prompt("How Much Rounds Do you want to Play?"))
+    let rounds=parseInt(prompt("How Much Rounds Do you want to Play?"));
   for(i=0;i<rounds;i++)
   {
     playRound();
