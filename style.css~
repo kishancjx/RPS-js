@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.container{
+    border: 5px solid grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 60vw;
+    
+}
+
+
+.rpsIMG{
+    object-fit:contain;
+    margin: 5px;
+    overflow:auto;
+    height: 80%;
+}
+
+
+.gameBtn{
+    
+    height: 20%;
+    margin: 20px;
+    border: 3px dotted wheat;
+    border-radius: 20px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+
+.gameBtn:hover{
+    background-color: green;
+    
+}

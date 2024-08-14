@@ -5,8 +5,66 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Document</title>
+	<link href="style.css" rel="stylesheet" />
 </head>
 <body>
+
+    <div class="container">
+
+	<img class="rpsIMG firstPage" src="https://media.geeksforgeeks.org/wp-content/uploads/20230802174130/Rock-Paper-Scissor.webp" />
+	<button onclick="PlayGame()"  class="gameBtn firstPage">START GAME</button>
+
+
+
+	<div class="row1 row gamePage">
+		<div class="inputBox">
+			<h1 id="userInputBox">You Entered:    </h1>
+		</div>
+		<div class="vl" style="border-left: 3px solid green; height: 80%;"></div>
+		<h1 id = "roundCounter">Round: 1</h1>
+		<div class="vl" style="border-left: 3px solid green; height: 80%;"></div>
+		<div class="inputBox">
+			<h1 id="pcInputBox">Pc Entered:    </h1>
+		</div>
+	</div>
+
+
+
+	<div class="row2 row gamePage">
+		<div class="row2Box">
+			<h2 class="yourScore score">Your Score: </h2>
+		</div>
+		<div class="row2Box">
+			<h2 class="roundResults score">You Won this Round!</h2>
+		</div>
+		<div class="row2Box">
+			<h2 class="pcScore score">Pc Score: </h2>
+		</div>
+	</div>
+
+
+
+	<div class="row3 row gamePage">
+	    <button class="rpsButtons" id="r">ROCK</button>
+	    <button class="rpsButtons" id="p">PAPER</button>
+	    <button class="rpsButtons" id="s">SCISSOR</button>
+	</div>
+
+	
+
+	<div class="winScreen finalPage">
+	    <h1 id="finalWinner">You Win!</h1>
+	    <div class="finalScoreDiv">
+		<h2 id="finalYourScore">Your Score: </h2>
+		<h2 id="finalPcScore">Pc Score: </h2>
+	    </div>
+		<button class="restartButton" onclick="ResetGame()">RESTART GAME</button>
+	</div>
+
+	
+	
+    </div>
+    
     <script src="rps.js"></script>
 </body>
 </html>

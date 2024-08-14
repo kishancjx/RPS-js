@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.container{
+    border: 5px solid grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 60vw;
+    justify-content:center;
+    
+}
+
+
+.rpsIMG{
+    object-fit:contain;
+    margin: 5px;
+    overflow:auto;
+    height: 80%;
+}
+
+
+.gameBtn{
+    
+    height: 20%;
+    margin: 20px;
+    border: 3px dotted wheat;
+    border-radius: 20px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+
+.gameBtn:hover{
+    background-color: green;
+    
+}
+
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.inputBox{
+    background-color: ghostwhite;
+    padding: 20px;
+    border: 3px solid darkslategray;
+    border-radius: 15px;
+    width: 260px;
+    
+    text-align: center;
+}
+
+
+
+.row2{
+    background-color: darkgoldenrod;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.row2Box{
+
+     background-color: ghostwhite;
+    padding: 5px;
+    border: 3px solid darkslategray;
+    border-radius: 15px;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.row2Box:nth-child(2){
+
+    width: 500px;
+    
+}
+
+.rpsButtons{
+
+    height: 70%;
+    width: 300px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+    border:solid 5px black;
+    
+}
+
+.rpsButtons:nth-child(1){
+    background-color: indianred;
+   
+}
+
+.rpsButtons:nth-child(2){
+    background-color: floralwhite;
+}
+
+.rpsButtons:nth-child(3){
+    background-color: yellowgreen;
+}
+.rpsButtons:nth-child(1):hover{
+    background-color: red;
+   
+}
+
+.rpsButtons:nth-child(2):hover{
+    background-color: paleturquoise;
+}
+
+.rpsButtons:nth-child(3):hover{
+    background-color: seagreen;
+}
+
+
+
+
+
+
+.row1{
+    flex: 3;
+}
+
+.row2{
+    flex:1;
+}
+.row3{
+    flex:2;
+}
+
+
+
+
+
+
+.winScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.winScreen>h1{
+    font-size: 70px;
+    margin: 5px;
+}
+
+.finalScoreDiv{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 120px;
+    
+    
+}
+
+.finalScoreDiv>h2{
+    background-color: wheat;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border-radius: 15px ;
+}
+
+
+.restartButton{
+
+    height: 20%;
+    width: 350px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+    border:solid 5px black;
+    background-color: orange;
+}
+
+.restartButton:hover{
+    background-color: darkorange;
+}
+
+
+/* this is just temporary */
+.row,.winScreen{display: none;}
+
+
+
+
